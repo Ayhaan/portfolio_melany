@@ -1,0 +1,819 @@
+body {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth !important;
+}
+/* SECTION NAVBAR */
+header {
+    background-image: url('../img/background/portfolio_page_tab.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 130vh;
+}
+/* link active */
+.un { 
+    text-decoration: underline !important;
+}
+.navbar {
+    display: flex;
+}
+.navbar-toggle {
+    display: none;
+}
+.collapse {
+    display: flex;
+}
+#navbar {
+    display: flex;
+    justify-content: space-around;
+}
+.menu-bar {
+    font-size: 4rem;
+    background: none;
+    color: white;
+}
+.menu-bar a {
+    padding: 0px 80px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+}
+.menu-bar a:hover {
+    color: #f1f1f1;
+}
+.menu-bar li {
+    list-style: none;
+}
+/* navbar fixe */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+/* SECTION HOME */
+#home {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logoRespon {
+    display: none;
+}
+.logo {
+    width: 200px;
+    background-color: none;
+    left: 0;
+    top: 0;
+}
+.vertical {
+    border-left: 2px solid white;
+    height: 170px;
+    margin-left: 50px;
+}
+.icones {
+    padding-top: 40px;
+}
+.icones i {
+    font-size: 30px;
+    color: #f1f1f1;
+    display: block;
+    background-color: none;
+    margin: 30px 40px;
+}
+.titre {
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+}
+.titre p {
+    color: white;
+    font-size: 70px;
+    padding-left: 45px;
+}
+.titre span {
+    color: #f1f1f1;
+    font-size: 50px;
+    padding-left: 55px;
+}
+
+/* SECTION SKILLS */
+#skills {
+    background-image: url('../img/background/portfolio_page_tab2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#skill {
+    margin: auto;
+    padding-top: 40px;
+}
+#bigtitle1 {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 110px;
+    padding-top: 70px;
+}
+.bigtitle {
+    display: none;
+}
+.textyellow {
+    color: #FFED4F;
+}
+.imgSkill {
+    width: 100%;
+}
+.textResp {
+    font-size: 40px;
+}
+
+/* SECTION PROJECTS */
+#projects {
+    background-image: url('../img/background/portfolio_page_tab2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+}
+.imgButton {
+    background-color: transparent;
+    margin: 50px 100px;
+    padding: 0px 15px;
+    font-size: 60px;
+    box-shadow: 0px 15px 19px -6px black;
+    border-radius: 5px;
+}
+.imgButton img {
+    width: 80px;
+    height: 80px;
+}
+.portf {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.photoS {
+    border: 3px solid #FFED4F;
+    border-radius: 5px;
+    margin: 25px;
+    box-shadow: 0px 15px 19px -6px black;
+}
+.btn {
+    margin: 50px 100px;
+    padding: 0px 15px;
+    font-size: 60px;
+    box-shadow: 0px 15px 19px -6px black;
+    background-color: #FFED4F;
+}
+.btn:hover {
+    background-color: #faed79
+}
+.portf h3 {
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+}
+
+/* Modal Content-Box - sousmenu*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 5%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: transparent;
+    margin: 10% 18%;
+    border: none;
+}
+.modal-content img {
+    width: 400px;
+    height: 350px;
+    padding: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0px 15px 19px -6px black;
+}
+.imgSous {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* The Close Button */
+.close, .close2, .close3, .close4, .close5 {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus,
+.close3:hover,
+.close3:focus,
+.close4:hover,
+.close4:focus,
+.close5:hover,
+.close5:focus {
+    color: #FFED4F;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* SECTION CONTACT */
+#contact {
+    background-image: url('../img/background/portfolio_page_tab2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.formCont {
+    width: 69%;
+    margin: auto;
+    padding: 50px 0;
+}
+form {
+    padding: 50px 0px 50px 0;
+    height: 350px;
+    background-color: grey;
+    border-radius: 15px;
+    box-shadow: 0px 15px 19px -6px black;
+}
+form label {
+    padding-left: 30px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 20px;
+}
+form input {
+    margin: 0 20px;
+    background-color: grey;
+    border: transparent;
+    border-bottom: 2px solid rgb(90, 88, 88);
+    cursor: pointer;
+}
+form .C {
+    display: flex;
+    flex-direction: column;
+}
+.butCont button {
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    color: #FFED4F;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 19px -6px black;
+}
+.butCont button:hover {
+    background-color: rgb(78, 76, 76);
+    box-shadow: 0px 15px 19px -6px black;
+    border: none;
+}
+
+/* SECTION FOOTER */
+footer {
+    background-color: rgb(77, 75, 75);
+}
+footer h6 {
+    color: white;
+    font-family: 'Tajawal', sans-serif;
+}
+footer h2 {
+    padding: 20px 0;
+    font-family: 'Tajawal', sans-serif;
+}
+.textfooter {
+    font-family: 'Tajawal', sans-serif;
+}
+.reseaux {
+    padding: 0 20px;
+}
+footer i {
+    color: white;
+    font-size: 27px;
+    padding: 0 18px;
+}
+.logoEnd {
+    width: 200px;
+    padding: 20px 0;
+}
+.copy {
+    text-align: end;
+}
+.copy p {
+    color: white;
+    font-weight: bold;
+    font-family: 'Tajawal', sans-serif;
+    border: 1px solid rgb(121, 118, 118);
+}
+.infosEnd {
+    display: none;
+}
+
+/* responsive */
+/* phone */
+@media screen and (max-width: 760px) {
+    header {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        height: 45vh;
+    }
+    #skills {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    #projects {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    #contact {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .navbar-toggle {
+        color: white;
+        display: flex;
+        margin-right: 100%;
+        justify-content: flex-start;
+        color: rgb(251, 248, 248);
+        background-color: transparent;
+    }
+    .menu-bar {
+        background: none;
+        color: white;
+        display: block;
+        position: fixed;
+    }
+    .menu-bar a {
+        padding: 0px 50px 0px 0px;
+        padding-bottom: 0px;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+    }
+    .menu-bar a:hover {
+        color: #f1f1f1;
+    }
+    .menu-bar li {
+        list-style: none;
+    }
+    .sticky {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .toggle-icone {
+        display: flex;
+        padding-top: 5px;
+    }
+    .toggle-icone a {
+        color: white;
+        padding-right: 45px;
+        font-size: 20px;
+    }
+    .logoRespon {
+        display: flex; 
+    }
+    .logoRespon img {
+        width: 160px;
+        height: 150px;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    .logoRespon span {
+        display: none;
+    }
+    .vertical {
+        display: none;
+    }
+    .icones {
+        display: none;
+    }
+    .titre {
+        display: none;
+    }
+    #bigtitle1 {
+        display: none;
+    }
+
+    /* skills */
+    .bigtitle {
+        display: flex;
+        font-family: 'Mrs Saint Delafield', cursive;
+        font-size: 50px;
+        padding-top: 0px;
+        justify-content: center;
+    }
+    .textyellow {
+        color: #FFED4F;
+        font-size: 15px;
+    }
+    .imgSkill {
+        width: 100%;
+    }
+    .textResp {
+        font-size: 13px;
+    }
+
+    /* projects */
+    .imgButton {
+        background-color: transparent;
+        margin: 10px 15px;
+        font-size: 30px;
+        box-shadow: 0px 15px 19px -6px black;
+        border-radius: 10px;
+    }
+    .imgButton img {
+        width: 30px;
+        height: 30px;
+    }
+    .portf {
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .photoS {
+        border: 1px solid #FFED4F;
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: 0px 15px 19px -6px black;
+    }
+    .btn {
+        margin: 10px 15px;
+        font-size: 30px;
+        box-shadow: 0px 15px 19px -6px black;
+        border-radius: 10px;
+        background-color: #FFED4F;
+    }
+    .btn:hover {
+        background-color: #faed79
+    }
+    .portf h3 {
+        text-align: center;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 17px;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 20%;
+        width: 90%;
+        height: 50%;
+    }
+    .modal-content {
+        background-color: transparent;
+        margin: 5% 5%;
+        border: none;
+    }
+    .modal-content img {
+        width: 200px;
+        height: 200px;
+        padding: 10px 0;
+    }
+    .close, .close2, .close3, .close4, .close5 {
+        font-size: 20px;
+    }
+
+    /* contact */
+    .formCont {
+        width: 65%;
+        margin: auto;
+        padding: 30px 0;
+    }
+    form {
+        padding: 0px 0px 30px 0px;
+        height: 300px;
+    }
+    form .row {
+        display: block;
+        margin: auto;
+    }
+    form label {
+        font-size: 15px;
+    }
+    form input {
+        margin: 0 10px;
+        background-color: grey;
+        border: transparent;
+        border-bottom: 1px solid rgb(90, 88, 88);
+        cursor: pointer;
+    }
+    .butCont button {
+        width: 80px;
+        height: 40px;
+        font-size: 13px;
+        font-weight: normal;
+    }
+
+    /* footer */
+    footer h6 {
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+        padding-left: 50%;
+        font-size: 20px;
+    }
+    .container {
+        display: flex;
+    }
+    .endResp {
+        display: block;
+    }
+    footer h2 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .reseaux i {
+        display: none;
+    }
+    .infosEnd {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .infosEnd .vert {
+        display: flex;
+        border-left: 1px solid white;
+        height: 110px;
+        margin-left: 130px;
+        margin-top: 5px;
+    }
+    .infosEnd i {
+        font-size: 30px;
+        color: #f1f1f1;
+        display: block;
+        background-color: transparent;
+        margin: 30px 100px;
+    }
+    .textEnd {
+        display: none;
+    }
+    .logoEnd {
+        display: none;
+    }
+    .copy p {
+        font-weight: normal;
+        font-size: 18px;
+    }
+}
+
+/*  tablet */
+@media screen and (min-width:768px) and (max-width: 992px) {
+    header {
+        background-image: url('../img/background/portfolio_page_tab.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        height: 50vh;
+    }
+    #skills {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    #projects {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    #contact {
+        background-image: url('../img/background/portfolio_page_tab2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .navbar-toggler {
+        width: 5rem;
+        color: white;
+        display: flex;
+        margin-right: 100%;
+    }
+    .navbar-toggle {
+        color: white;
+        display: flex;
+        margin-right: 100%;
+        justify-content: flex-start;
+        color: rgb(251, 248, 248);
+        background-color: transparent;
+    }
+    .menu-bar {
+        background: none;
+        color: white;
+        display: block;
+        position: fixed;
+    }
+    .menu-bar a {
+        padding: 0px 50px 0px 0px;
+        padding-bottom: 0px;
+        text-decoration: none;
+        font-size: 35px;
+        font-weight: bold;
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+    }
+    .menu-bar a:hover {
+        color: #f1f1f1;
+    }
+    .menu-bar li {
+        list-style: none;
+    }
+    .sticky {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    .logoRespon {
+        display: none;
+    }
+    .vertical {
+        display: none;
+    }
+    .icones i {
+        display: none;
+    }
+    .titre {
+        display: none;
+    }
+    #bigtitle1 {
+        display: none;
+    }
+
+    /* skills */
+    .bigtitle {
+        display: flex;
+        font-family: 'Mrs Saint Delafield', cursive;
+        font-size: 70px;
+        padding-top: 0px;
+        justify-content: center;
+    }
+    .textyellow {
+        color: #FFED4F;
+        font-size: 20px;
+    }
+    .imgSkill {
+        width: 100%;
+    }
+    .textResp {
+        font-size: 20px;
+    }
+
+    /* projects */
+    .imgButton {
+        background-color: transparent;
+        margin: 20px 50px;
+        font-size: 40px;
+        box-shadow: 0px 15px 19px -6px black;
+        border-radius: 10px;
+    }
+    .imgButton img {
+        width: 40px;
+        height: 40px;
+    }
+    .portf {
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .photoS {
+        border: 1px solid #FFED4F;
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0px 15px 19px -6px black;
+    }
+    .btn {
+        margin: 20px 50px;
+        font-size: 40px;
+        box-shadow: 0px 15px 19px -6px black;
+        border-radius: 10px;
+        background-color: #FFED4F;
+    }
+    .btn:hover {
+        background-color: #faed79
+    }
+    .portf h3 {
+        text-align: center;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 25px;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 20%;
+        width: 100%;
+        height: 50%;
+    }
+    .modal-content {
+        background-color: transparent;
+        margin: 5% 10%;
+        border: none;
+    }
+    .modal-content img {
+        width: 200px;
+        height: 200px;
+        padding: 10px 0;
+    }
+    .close, .close2, .close3, .close4, .close5 {
+        font-size: 30px;
+    }
+
+    /* contact */
+    .formCont {
+        width: 65%;
+        margin: auto;
+        padding: 20px 0px;
+    }
+    form {
+        padding: 30px 0px 30px 0;
+        height: 320px;
+    }
+    form label {
+        font-size: 20px;
+    }
+    form input {
+        margin: 0 20px;
+        background-color: grey;
+        border: transparent;
+        border-bottom: 2px solid rgb(90, 88, 88);
+        cursor: pointer;
+    }
+    .butCont button {
+        width: 90px;
+        height: 40px;
+        font-size: 17px;
+        font-weight: normal;
+    }
+    /* footer */
+    footer h6 {
+        color: white;
+        font-family: 'Tajawal', sans-serif;
+        font-size: 20px;
+    }
+    footer h2 {
+        font-size: 22px;
+    }
+    .textfooter {
+        font-size: 20px;
+    }
+    .reseaux i {
+        padding: 0 7px;
+        font-size: 22px;
+    }
+    .logoEnd {
+        width: 150px;
+        padding: 20px 0;
+    }
+    .copy p {
+        font-weight: normal;
+        font-size: 20px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+@media screen and (max-width: 960px) {
+}
+
