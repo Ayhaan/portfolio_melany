@@ -268,7 +268,7 @@
     <section id='contact' class="contact">
         <h1 class="bigtitle text-center text-white">Contact me</h1>
         <div class="formCont container">
-            <form action="contactMailJet.php" method="POST">
+            <form action="contact.php" method="POST">
                 <div class="row">
                     <div class="C col-6">
                         <label class="text-white" for="nom" na>Name</label>
